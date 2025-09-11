@@ -4,10 +4,7 @@ import { Mail, PhoneCall } from "lucide-react";
 
 const Home = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center mt-10 bg-gray-50  bg-gradient-to-r 
-      from-transparent 
-      via-transparent
-      to-cyan-600/90
+    <section className="relative flex flex-col md:flex-row items-center mt-10 bg-gray-50  
 ">
 
       {/* Left Side - Text */}

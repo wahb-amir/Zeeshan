@@ -3,6 +3,7 @@ import Home from './component/Home';
 import About from './component/About';
 import Services from './component/Services'
 import Footer from './component/Footer';
+import Skills from './component/Skills';
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <Home />
       <About />
       <Services />
+      <Skills />
       <Footer />
     </div>
   )
