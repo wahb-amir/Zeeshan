@@ -15,7 +15,7 @@ const Home = () => {
         <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
           Syed Zeeshan
         </h1>
-        <h2 className="text-[30px] font-semibold text-gray-500 mb-6">
+        <h2 className="text-[20px] sm:text-[30px] font-semibold text-gray-500 mb-6">
           SAP BI/BW4HANA/DataSphere Consultant
         </h2>
 
@@ -35,7 +35,7 @@ const Home = () => {
       </div>
 
       {/* Right Side - Circular Background with Image */}
-      <div className="flex-1 flex items-center justify-center">
+      <div className="block m-auto">
          <img
           src="/hero-image.webp"
           alt="Syed Zeeshan"
