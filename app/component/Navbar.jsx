@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
 
 
-                    {/* center: nav items (hidden on small screens) */}
+                 
                     <div className="hidden md:flex md:space-x-6 md:flex-1 md:justify-center">
                         <ul className="flex items-center gap-6">
                             {navItems.map((item) => (
@@ -52,7 +52,7 @@ export default function Navbar() {
                                         {item.name}
                                     </Link>
 
-                                    {/* underline effect */}
+                                  
                                     <span
                                         className={`absolute left-0 -bottom-1 h-[2px] bg-blue-600 transition-all duration-300 
         ${pathName === item.href ? "w-full" : "w-0 group-hover:w-full"}`}
@@ -76,7 +76,7 @@ export default function Navbar() {
                             aria-expanded={open}
                             aria-label="Toggle menu"
                         >
-                            {/* icon switches between hamburger / x */}
+                           
                             {!open ? (
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -90,8 +90,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Mobile menu (only visible when open) */}
-                {open && (
+                  {open && (
                     <div className="md:hidden mt-2 pb-4">
                         <ul className="space-y-1">
                             {navItems.map((item) => (
