@@ -16,7 +16,7 @@ const About = () => {
             <h3 className={`${playfair.className} text-3xl font-bold leading-tight uppercase tracking-wider text-gray-900 text-bold mt-1`}>
                 DYNAMIC & ACCOMPLISHED CERTIFIED PROFESSIONAL WITH 20+ YEARS OF OVER ALL IT EXPERIENCE
             </h3>
-            <h5 className="text-lg font-semibold leading-snug text-gray-900 px-2 mt-1">
+            <h5 className="text-lg  leading-snug text-gray-900 px-2 mt-1 font-bold">
                 Seeking challenging assignments as SAP BI/BW4HANA Lead / Project Manager with a well-established organization
             </h5>
             
