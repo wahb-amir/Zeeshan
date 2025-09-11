@@ -18,7 +18,7 @@ export default function Navbar() {
     ];
 
     return (
-        <header className="bg-transparent backdrop-blur border-b">
+        <header className="bg-white/90 backdrop-blur border-b">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center flex-1">
@@ -44,17 +44,22 @@ export default function Navbar() {
                                 <li key={item.name} className="relative group">
                                     <Link
                                         href={item.href}
-                                        className={`px-2 py-2 text-lg transition-colors font-small ${pathName === item.href
-                                            ? "text-blue-600 font-medium"
-                                            : "text-gray-800 hover:text-blue-600"
-                                            }`}
+                                        className={`px-2 py-2 text-lg transition-colors 
+        ${pathName === item.href
+                                                ? "font-medium text-blue-600"
+                                                : "text-gray-800 hover:text-blue-600"}`}
                                     >
                                         {item.name}
                                     </Link>
 
-                                    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                                    {/* underline effect */}
+                                    <span
+                                        className={`absolute left-0 -bottom-1 h-[2px] bg-blue-600 transition-all duration-300 
+        ${pathName === item.href ? "w-full" : "w-0 group-hover:w-full"}`}
+                                    />
                                 </li>
                             ))}
+
                         </ul>
 
                     </div>
@@ -93,17 +98,17 @@ export default function Navbar() {
                                 <li key={item.name}>
                                     <Link
                                         href={item.href}
-                                        className={`px-2 py-2 text-lg transition-colors font-small ${pathName === item.href
-                                                ? "text-blue-600 font-medium"
-                                                : "text-gray-800 hover:text-blue-600"
-                                            }`}
+                                        className={`block px-3 py-4 rounded-md border-b border-black/10 text-lg transition-colors
+        ${pathName === item.href
+                                                ? "font-medium text-blue-600 bg-gray-50"
+                                                : "text-gray-800 hover:text-blue-600 hover:bg-gray-50"}`}
+                                        onClick={() => setOpen(false)}
                                     >
                                         {item.name}
                                     </Link>
-
-
                                 </li>
                             ))}
+
                         </ul>
 
                         <div className="mt-3 flex items-center gap-3 px-3">
