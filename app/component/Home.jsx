@@ -40,11 +40,15 @@ const Home = () => {
         <img
           src="/hero-image.webp"
           alt="Syed Zeeshan"
+          width={450}
+          height={450}
           className="w-[100%] h-[100%] sm:w-[450px] sm:h-[450px] object-cover rounded-full shadow-lg mr-3"
         />
+
       </div>
     </section>
   );
+
 };
 
 export default Home;
